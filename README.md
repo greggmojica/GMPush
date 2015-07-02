@@ -11,6 +11,10 @@ GMPush requires only that Parse's SDK is installed (with the required frameworks
 
 `#import "GMPush.h"` will do the trick.
 
+## Usage
+`GMPush *push = [[GMPush alloc]init];
+[push handlePushWithTitle:[NSString stringWithFormat:@"Updated SALE of %@ by %@", self.title,self.textField.text ]];`
+    
 ## Contributing
 1. Fork it!
 2. Create your feature branch: `git checkout -b newFeature`
