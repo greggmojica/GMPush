@@ -12,9 +12,13 @@ GMPush requires only that Parse's SDK is installed (with the required frameworks
 `#import "GMPush.h"` will do the trick.
 
 ## Usage
-`GMPush *push = [[GMPush alloc]init];
-[push handlePushWithTitle:[NSString stringWithFormat:@"Updated SALE of %@ by %@", self.title,self.textField.text ]];`
+GMPush is incredible easy to use.  Take the most basic example of sending a push Notification:
+
+`GMPush *push = [[GMPush alloc]init];`
+`[push handlePushWithTitle:[NSString stringWithFormat:@"Hello, World"]];`
     
+However, GMPush supports built-in UIAlertViews and more.  Simply browse the source file (.h) for more information.
+
 ## Contributing
 1. Fork it!
 2. Create your feature branch: `git checkout -b newFeature`
